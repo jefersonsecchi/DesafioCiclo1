@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+:root{
+    --fonte-padrao: helvetica, arial, verdana;
+    --fundo-padrao: #212121;
+    --cor-fonte-padrao: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor-fonte-padrao);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+a:hover{
+    background-color: #F9A825;
+    border-radius: 50px;
+    transition: 0.4s;
+}
+
+header, main, footer{
+    width: 100%;
+    margin: auto;
+}
+
+header#topHeader{
+    height: 40px;
+    background-color: var(--fundo-padrao);
+}
+
+.flex{
+    display: flex;
+}
+
+header#topHeader h1, header#topHeader nav{
+    width: 50%;
+}
+
+header#topHeader h1{
+    align-items: center;
+    color: var(--cor-fonte-padrao);
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    padding-left: 150px;
+}
+
+header#topHeader nav#menu ul#listaMenu{
+    width: 100%;
+    justify-content: center;
+}
+
+nav#menu ul#listaMenu li.item{
+    width: 100px;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--cor-fonte-padrao);
+    font-family: var(--fonte-padrao);
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+main#corpo{
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+main#corpo div#card{
+    border: 1px solid black;
+    flex-wrap: wrap;
+}
+
+main#corpo div#card section#bloco{
+    width: 400px;
+    height: 250px;
+    font-family: var(--fonte-padrao);
+}
+
+.bloco1{
+    padding: 20px;
+    border-right: 1px dashed black;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco2{
+    align-items: center;
+}
+
+.emaiCadastro{
+    border-width: 1px solid black;
+}
+
+input{
+    border: 1px solid black;
+}
+
+footer#bottomFooter{
+    height: 80px;
+    background-color: var(--fundo-padrao);
+    font-size: 0.8rem;
+    font-family: var(--fonte-padrao);
+    color: var(--cor-fonte-padrao);
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+}
